@@ -1,0 +1,17 @@
+# Add/adjust these in backend/.env (and mirror in .env.example)
+APP_URL=http://localhost:8000
+APP_TIMEZONE=Asia/Phnom_Penh
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=stylepos
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Sanctum cookie/session auth for the React SPA (Vite dev server runs on 5173 by default)
+FRONTEND_URL=http://localhost:5173
+SANCTUM_STATEFUL_DOMAINS=localhost:5173,localhost:3000
+SESSION_DRIVER=database
+SESSION_DOMAIN=localhost
+SESSION_SECURE_COOKIE=false   # set true behind HTTPS in production
